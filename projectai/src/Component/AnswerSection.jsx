@@ -1,0 +1,35 @@
+import linkedin from "../linkedin.jpg"
+const AnswerSection = ({ storedValues }) => {
+    const copyText = (text) => {
+        navigator.clipboard.writeText(text);
+    };
+
+    return (
+        <>
+        <hr className="hr-line" />
+        <div>
+            <button><a href="https://www.linkedin.com/company/iosys-software/" target="_blank">
+                <img src={linkedin} style={{height:"50px",width:"50px"}} /></a></button>
+        </div>
+            <hr className="hr-line" />
+            <div className="answer-container">
+                {storedValues.map((value, index) => {
+                    return (
+                        <div className="answer-section" key={index}>
+                            <p className="question">{value.question}</p>
+                            <p className="answer">{value.answer}</p>
+                            <div
+                                className="copy-icon"
+                                onClick={() => copyText(value.answer)}
+                            >
+                                <i className="fa-solid fa-copy"></i>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </>
+    )
+}
+
+export default AnswerSection;
