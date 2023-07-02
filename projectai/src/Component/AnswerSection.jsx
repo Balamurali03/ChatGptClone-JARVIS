@@ -1,4 +1,3 @@
-import linkedin from "../linkedin.jpg"
 const AnswerSection = ({ storedValues }) => {
     const copyText = (text) => {
         navigator.clipboard.writeText(text);
