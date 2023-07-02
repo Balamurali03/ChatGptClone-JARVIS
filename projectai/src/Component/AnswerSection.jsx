@@ -7,7 +7,7 @@ const AnswerSection = ({ storedValues }) => {
         <>
             <hr className="hr-line" />
             <div className="answer-container">
-                {storedValues.map((value, index) => { 
+                {storedValues.map((value, index) => {
                     return (
                         <div className="answer-section" key={index}>
                             <p className="question">{value.question}</p>
