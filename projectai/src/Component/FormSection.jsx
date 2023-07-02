@@ -4,7 +4,7 @@ const FormSection = ({ generateResponse }) => {
     const [newQuestion, setNewQuestion] = useState('');
     const [verify, setverify] = useState(true); 
     useEffect(()=>{
-        if(!newQuestion=='' || !newQuestion==undefined) {
+        if(!newQuestion==='' || !newQuestion===undefined) {
             setverify(false);
         }
         else {
