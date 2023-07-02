@@ -6,11 +6,6 @@ const AnswerSection = ({ storedValues }) => {
 
     return (
         <>
-        <hr className="hr-line" />
-        <div>
-            <button><a href="https://www.linkedin.com/company/iosys-software/" target="_blank">
-                <img src={linkedin} style={{height:"50px",width:"50px"}} /></a></button>
-        </div>
             <hr className="hr-line" />
             <div className="answer-container">
                 {storedValues.map((value, index) => {

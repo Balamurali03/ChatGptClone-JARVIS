@@ -10,7 +10,7 @@ const FormSection = ({ generateResponse }) => {
         else {
             setverify(true);
         }
-    })
+    },[newQuestion])
     return (
         <div className="form-section">
             <textarea
