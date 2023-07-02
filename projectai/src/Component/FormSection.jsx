@@ -1,16 +1,17 @@
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
+//import { useEffect } from 'react';
 
 const FormSection = ({ generateResponse }) => {
     const [newQuestion, setNewQuestion] = useState('');
-    const [verify, setverify] = useState(true); 
-    useEffect(()=>{
-        if(!newQuestion==='' || !newQuestion===undefined) {
-            setverify(false);
-        }
-        else {
-            setverify(true);
-        }
-    },[verify])
+    // const [verify, setverify] = useState(true); 
+    // useEffect(()=>{
+    //     if(!newQuestion==='' || !newQuestion===undefined) {
+    //         setverify(false);
+    //     }
+    //     else {
+    //         setverify(true);
+    //     }
+    // },[verify])
     return (
         <div className="form-section">
             <textarea
